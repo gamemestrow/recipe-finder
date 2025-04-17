@@ -19,7 +19,6 @@ const HeaderPart = ({
   const navigate = useNavigate();
 
   useEffect(() => {
-    console.log(location, isHomePage);
 
     if (location.pathname != "/") {
       setisHomePage(false);

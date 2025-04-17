@@ -19,15 +19,12 @@ const RecipePage = ({darkMode,setdarkMode}) => {
             import.meta.env.VITE_API_KEY
           }`
         );
-        console.log(response.data);
         setrecipe(response.data);
       } catch (error) {
-        console.log("an error :" + error);
       } finally {
         setloading(false);
       }
     };
-    console.log("we are here", id);
     fillRecipe();
   }, [id]);
 
